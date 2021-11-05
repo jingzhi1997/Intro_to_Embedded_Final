@@ -9,13 +9,12 @@
  *
  *****************************************************************************/
 /**
- * @file <Add File Name> 
- * @brief <Add Brief Description Here >
+ * @file	stats.h
+ * @brief	Header file for stats.c
  *
  * <Add Extended Description Here>
  *
- * @author <Add FirsName LastName>
- * @date <Add date >
+ * @author	Zhi Jing
  *
  */
 #ifndef __STATS_H__
@@ -23,18 +22,19 @@
 
 /* Add Your Declarations and Function Comments here */ 
 
-/**
- * @brief <Add Brief Description of Function Here>
- *
- * <Add Extended Description Here>
- *
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
- *
- * @return <Add Return Informaiton here>
- */
+//print_statistics function removed as it is not needed.
+
+void print_array(unsigned char *array, unsigned int array_size);
+
+unsigned char find_median(unsigned char *array, unsigned int array_size);
+
+unsigned char find_mean(unsigned char *array, unsigned int array_size);
+
+unsigned char find_maximum(unsigned char *array, unsigned int array_size);
+
+unsigned char find_minimum(unsigned char *array, unsigned int array_size);
+
+void sort_array(unsigned char *array, unsigned int array_size);
 
 
 #endif /* __STATS_H__ */
